@@ -3,9 +3,17 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'materialize-css/dist/css/materialize.min.css'
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyles = createGlobalStyle`
+  body {
+    padding: 2rem;
+  }
+`
 
 ReactDOM.render(
   <React.StrictMode>
+    <GlobalStyles />
     <App />
   </React.StrictMode>,
   document.getElementById('root')
