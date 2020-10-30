@@ -1,8 +1,9 @@
 import React from 'react'
+import Boxes from '../../components/boxes'
 
 const Main: React.FC = (): JSX.Element => {
     return (
-        <>Main</>
+        <Boxes />
     )
 }
 
