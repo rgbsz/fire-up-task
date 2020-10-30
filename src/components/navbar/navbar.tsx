@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from '../link'
+import NavbarLink from '../navbarLink'
 
 import { Component, Brand, Links } from './navbar.styles'
 
@@ -11,10 +11,10 @@ const Navbar: React.FC = (): JSX.Element => {
                     FIREUP.PRO
                 </Brand>
                 <Links>
-                    <Link text='HOME'/>
-                    <Link text='MENU 2'/>
-                    <Link text='MENU 3'/>
-                    <Link text='POGODA'/>
+                    <NavbarLink link='/' text='HOME'/>
+                    <NavbarLink link='/' text='MENU 2'/>
+                    <NavbarLink link='/' text='MENU 3'/>
+                    <NavbarLink link='/weather' text='POGODA'/>
                 </Links>
             </div>
         </Component>
