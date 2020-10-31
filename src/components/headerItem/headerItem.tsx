@@ -1,10 +1,14 @@
 import React from 'react'
+import theme from '../../theme'
+import { Wrapper } from './headerItem.styles'
+import { IHeaderItemProps } from './headerItem.types'
 
-const HeaderItem: React.FC<{ className: string }> = ({ className }): JSX.Element => {
+const HeaderItem: React.FC<IHeaderItemProps> = ({ className, icon, text, background, opacity }): JSX.Element => {
     return (
-        <div className={className}>
-            Item
-        </div>
+        <Wrapper className={className} background={background} opacity={opacity}>
+            <img src={icon}/>
+            <span>{text}</span>
+        </Wrapper>
     )
 }
 
