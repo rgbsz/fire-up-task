@@ -1,11 +1,11 @@
 import React from 'react'
-import { withRouter } from 'react-router'
 
 import { StyledLink } from './link.styles'
+import { ILinkProps } from './link.types'
 
-const NavbarLink: React.FC<{ text: string, link: string }> = ({ text, link }): JSX.Element => {
+const NavbarLink: React.FC<ILinkProps> = ({ text, link, active }): JSX.Element => {
     return (
-        <StyledLink to={link}>{text}</StyledLink>
+        <StyledLink to={link} active={active}>{text}</StyledLink>
     )
 }
 

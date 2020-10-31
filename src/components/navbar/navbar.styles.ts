@@ -1,16 +1,18 @@
 import styled from 'styled-components'
 
 export const Component = styled.nav`
-    background: blue;
+    background: white;
     box-shadow: none;
     .container {
+        position: relative;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 `
 
-export const Brand = styled.div`
-    font-size: 1rem;
+export const Brand = styled.img`
+    height: 3rem;
 `
 
 export const Links = styled.div`
