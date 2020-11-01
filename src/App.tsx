@@ -7,7 +7,7 @@ import Navbar from './components/navbar'
 import Main from './screens/main'
 import Weather from './screens/weather';
 
-const App: React.FC = () => {
+const App: React.FC = (): JSX.Element => {
   return (
     <BrowserRouter>
       <>
