@@ -1,4 +1,5 @@
 import React from 'react'
+import GreySection from '../greySection'
 
 import Photos from '../photos'
 
@@ -9,6 +10,7 @@ const Footer: React.FC = (): JSX.Element => {
         <Wrapper>
             <div className="container">
                 <Photos />
+                <GreySection />
             </div>
         </Wrapper>
     )
