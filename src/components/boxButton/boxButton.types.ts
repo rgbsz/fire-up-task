@@ -8,5 +8,6 @@ export interface IBoxButton {
 }
 
 export interface IBoxButtonProps extends IBoxButton {
-    onClick: OnClick
+    onClick: OnClick,
+    text: string
 }

@@ -12,7 +12,7 @@ import { Image, Heading, Items } from './header.styles'
 const Header: React.FC = (): JSX.Element => {
     return (
         <Image>
-            <div className='container'>
+            <div className='myContainer'>
                 <Heading>Feel the Power of Typography</Heading>
                 <Items className='row color'>
                     <HeaderItem className='col l4 s12' icon={firstIcon} text='Typography' background={theme.colors.red} opacity='1'/>

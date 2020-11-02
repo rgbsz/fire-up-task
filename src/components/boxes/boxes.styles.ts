@@ -3,16 +3,19 @@ import styled from 'styled-components'
 export const Wrapper = styled.div`
     width: 100%;
     background: #f2f2f2;
-    .container {
+    .myContainer {
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 5rem 10rem;
+        padding: 7rem 11rem;
     }
 `
 
 export const Box = styled.div`
     padding: 1rem;
-    border: 1px solid black;
+    border: 1px solid ${({ theme }) => theme.colors.blue};
+    position: relative;
+    z-index: 2;
+    background: white;
 `

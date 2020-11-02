@@ -10,7 +10,7 @@ const Navbar: React.FC = (): JSX.Element => {
     const location = useLocation().pathname
     return (
         <Component>  
-            <div className="container">
+            <div className="myContainer">
                 <Brand src={BrandImage}/>
                 <Links>
                     <NavbarLink link='/' text='HOME' active={location === '/' ? true : false}/>

@@ -1,10 +1,13 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
-    background: red;
-    flex: 1;
+    background: white;
+    flex: 0 0 23rem;
     display: flex;
     flex-direction: column;
+    @media only screen and (max-width: 1000px) {
+        margin-top: 2rem;
+    }
 `
 
 export const Heading = styled.span`

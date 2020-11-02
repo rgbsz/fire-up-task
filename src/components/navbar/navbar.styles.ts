@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Component = styled.nav`
     background: white;
     box-shadow: none;
-    .container {
+    .myContainer {
         position: relative;
         display: flex;
         justify-content: space-between;

@@ -8,7 +8,7 @@ import { Wrapper } from './footer.styles'
 const Footer: React.FC = (): JSX.Element => {
     return (
         <Wrapper>
-            <div className="container">
+            <div className="myContainer">
                 <Photos />
                 <GreySection />
             </div>
