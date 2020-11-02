@@ -5,7 +5,7 @@ export const Wrapper = styled.div<IStyledItemProps>`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%auto;
+    width: 100%;
     span {
         position: relative;
         width: 12rem;
@@ -22,5 +22,8 @@ export const Wrapper = styled.div<IStyledItemProps>`
             top: 0;
             left: 0;
         }
+    }
+    @media only screen and (max-width: 992px) {
+        flex-direction: column;
     }
 `

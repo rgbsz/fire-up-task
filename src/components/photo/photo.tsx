@@ -5,7 +5,7 @@ import { IPhotoProps } from './photo.types'
 
 const Photo: React.FC<IPhotoProps> = ({ src, described }): JSX.Element => {
     return (
-        <Wrapper className='col l3'>
+        <Wrapper className={`col l3 s6`}>
             { 
                 described ? (
                     <DescribedContent>

@@ -21,13 +21,10 @@ export const Image = styled.div`
     }
 `
 
-export const FlexContainer = styled.div`
-
-`
-
 export const Heading = styled.h1`
     margin: 0;
     color: white;
+    text-align: center;
 `
 
 export const Items = styled.div`

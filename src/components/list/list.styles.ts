@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
     flex: 0 0 23rem;
     display: flex;
     flex-direction: column;
-    @media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: 992px) {
         margin-top: 2rem;
     }
 `

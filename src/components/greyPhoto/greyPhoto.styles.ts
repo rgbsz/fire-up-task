@@ -8,7 +8,7 @@ export const Wrapper = styled.div<{ src: string }>`
     background: url(${({ src }) => src}) top;
     background-size: cover;
     flex: 1;
-    @media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: 992px) {
         &:last-child {
             margin-right: 0;
         }
@@ -46,7 +46,7 @@ export const Overlay = styled.div<{ side: Side }>`
         font-size: 3rem;
         display: ${({ side }) => side === 'left' ? 'block' : 'none'};
     }
-    @media only screen and (max-width: 1000px) and (min-width: 601px) {
+    @media only screen and (max-width: 992px) and (min-width: 601px) {
         clip-path: polygon(${({ side }) => side === 'left' ? '0 0, 100% 0, 100% 100%, 0 0' : '0 0, 100% 0, 0 100%, 0 100%'});
         &::after {
             top: 0;
