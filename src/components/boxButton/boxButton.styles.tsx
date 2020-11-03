@@ -15,4 +15,11 @@ export const Button = styled.button<IBoxButton>`
     &:focus {
         outline: none;
     }
+    @media only screen and (max-width: 600px) {
+        position: relative;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
 `

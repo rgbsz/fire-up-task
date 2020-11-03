@@ -25,5 +25,13 @@ export const Wrapper = styled.div<IStyledItemProps>`
     }
     @media only screen and (max-width: 992px) {
         flex-direction: column;
+        span {
+            text-align: center;
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        span {
+            margin-top: 1rem;
+        }
     }
 `
