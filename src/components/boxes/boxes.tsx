@@ -10,14 +10,8 @@ const Boxes: React.FC = (): JSX.Element => {
         <Wrapper>
             <div className="myContainer">
                 <Box>
-                <p>Box {chosenBox}</p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, earum nihil blanditiis velit odio sed voluptates odit a aliquid magni libero. Dolor culpa quisquam magni dolores ipsum expedita quis quae!
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, earum nihil blanditiis velit odio sed voluptates odit a aliquid magni libero. Dolor culpa quisquam magni dolores ipsum expedita quis quae!
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, earum nihil blanditiis velit odio sed voluptates odit a aliquid magni libero. Dolor culpa quisquam magni dolores ipsum expedita quis quae!
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, earum nihil blanditiis velit odio sed voluptates odit a aliquid magni libero. Dolor culpa quisquam magni dolores ipsum expedita quis quae!
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, earum nihil blanditiis velit odio sed voluptates odit a aliquid magni libero. Dolor culpa quisquam magni dolores ipsum expedita quis quae!
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, earum nihil blanditiis velit odio sed voluptates odit a aliquid magni libero. Dolor culpa quisquam magni dolores ipsum expedita quis quae!
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, earum nihil blanditiis velit odio sed voluptates odit a aliquid magni libero. Dolor culpa quisquam magni dolores ipsum expedita quis quae!
+                    <p>Text from box {chosenBox}</p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum omnis eius deleniti perferendis dolorum minima quasi natus facere porro quaerat. Iure minus alias soluta aliquid natus minima voluptate, laborum dicta quam in suscipit. Officiis corrupti, modi vel, sunt, corporis eligendi cupiditate suscipit obcaecati eius delectus iure aliquid. Rem unde nemo voluptatum incidunt deleniti sed eligendi sapiente beatae ab dolorum veniam accusantium dolor, temporibus, in explicabo error ex velit, voluptates tempore consequatur doloribus quas aliquid? Adipisci quos molestias esse possimus qui? Odit voluptate neque officiis enim quia voluptas debitis blanditiis delectus nulla voluptatem, quae quod similique iure quis. Aspernatur, repudiandae! Obcaecati.
                 </Box>
                 <ButtonsWrapper>
                     <BoxButton top='4rem' left='1rem' onClick={() => setChosenBox(1)} text='1' active={chosenBox === 1 && true} color={theme.colors.yellow}/>

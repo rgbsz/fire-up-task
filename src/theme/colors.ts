@@ -15,6 +15,9 @@ const colors = {
         green: "#a3d49c",
         purple: "#e5b6e7",
     },
+    weather: {
+        grey: '#d4d4d4'
+    }
 }
 
 export default colors
