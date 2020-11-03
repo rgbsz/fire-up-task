@@ -10,10 +10,12 @@ export const Button = styled.button<IBoxButton>`
     ${({ right }) => right && 'right: ' + right + ';'}
     padding: 1.5rem;
     font-size: 1.5rem;
-    border: 1px solid black;
-    background: white;
+    border: 1px solid ${({ active, theme }) => active ? theme.colors.blue : 'transparent'};
+    background: ${({ active, color }) => active ? 'white' : color};
     &:focus {
         outline: none;
+        background: white;
+        border: 1px solid ${({ theme }) => theme.colors.blue};
     }
     @media only screen and (max-width: 600px) {
         position: relative;
@@ -21,5 +23,11 @@ export const Button = styled.button<IBoxButton>`
         left: 0;
         bottom: 0;
         right: 0;
+    }
+    &::before {
+        content: 'BOX NAME ';
+        @media only screen and (max-width: 600px) {
+            content: '';
+        }
     }
 `

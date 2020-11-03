@@ -9,7 +9,7 @@ const colors = {
     grey: "#626262",
     darkGrey: "#333333",
     headerBlue: '#448b97',
-    section3: {
+    photos: {
         blue: "#8393ca",
         orange: "#faad81",
         green: "#a3d49c",

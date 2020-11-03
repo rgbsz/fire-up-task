@@ -29,8 +29,15 @@ export const Box = styled.div`
     position: relative;
     z-index: 2;
     background: white;
+    p {
+        font-size: 2rem;
+        margin: .5rem 0;
+        color: ${({ theme }) => theme.colors.blue};
+    }
 `
 
 export const ButtonsWrapper = styled.div`
     display: flex;
+    justify-content: space-between;
+    width: 100%;
 `

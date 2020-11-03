@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { IPhotoStyled } from './photo.types'
 
 export const Wrapper = styled.div`
     position: relative;
@@ -7,7 +8,7 @@ export const Wrapper = styled.div`
     }
 `
 
-export const Content = styled.div`
+export const Content = styled.div<IPhotoStyled>`
     background: white;
     display: flex;
     justify-content: center;
@@ -15,12 +16,13 @@ export const Content = styled.div`
     position: relative;
     height: 100%;
     padding: 1rem;
+    border-top: 5px solid ${({ color }) => color};
     img {
         width: 100%;
     }
 `
 
-export const DescribedContent = styled.div`
+export const DescribedContent = styled.div<IPhotoStyled>`
     background: white;
     display: flex;
     flex-direction: column;
@@ -29,12 +31,16 @@ export const DescribedContent = styled.div`
     padding: 1rem;
     height: 100%;
     position: relative;
+    border-top: 5px solid ${({ color }) => color};
     img {
         width: 100%;
     }
     span {
         font-size: 2rem;
         text-align: center;
+        p {
+            color: ${({ color }) => color};
+        }
     }
     @media only screen and (max-width: 992px) {
         flex-direction: row;
@@ -53,6 +59,9 @@ export const DescribedContent = styled.div`
             display: flex;
             justify-content: center;
             align-items: center;
+            p {
+                background: rgba(255,255,255,.8);
+            }
         }
         img {
             width: 100%;

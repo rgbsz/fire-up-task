@@ -12,17 +12,17 @@ const Photos: React.FC = (): JSX.Element => {
         <>
             <Wrapper className='row hide-on-med-and-down'>
             {
-                    PHOTOS.map((item: IPhotoProps) => <Photo src={item.src} described={item.described}/>)
+                    PHOTOS.map((item: IPhotoProps) => <Photo src={item.src} described={item.described} color={item.color}/>)
                 }
             </Wrapper>
             <Wrapper className='row hide-on-large-only hide-on-small-only'>
             {
-                    PHOTOS_MD.map((item: IPhotoProps) => <Photo src={item.src} described={item.described}/>)
+                    PHOTOS_MD.map((item: IPhotoProps) => <Photo src={item.src} described={item.described} color={item.color}/>)
                 }
             </Wrapper>
             <Wrapper className='row hide-on-med-and-up'>
             {
-                    PHOTOS_SM.map((item: IPhotoProps) => <Photo src={item.src} described={item.described}/>)
+                    PHOTOS_SM.map((item: IPhotoProps) => <Photo src={item.src} described={item.described} color={item.color}/>)
                 }
             </Wrapper>
         </>
