@@ -1,26 +1,6 @@
+import { CarouselProvider } from 'pure-react-carousel'
 import styled from 'styled-components'
-
-import FirstHeaderImage from '../../images/header_1.png' 
-
-export const Image = styled.div`
-    width: 100%;
-    height: 40rem;
-    background: url(${FirstHeaderImage}) center;
-    background-size: cover;
-    padding: 6rem 0;
-    position: relative;
-    z-index: 4;
-    .myContainer {
-        height: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        .row {
-            width: 100%;
-        }
-    }
-`
+import { IHeaderStyled } from './header.types'
 
 export const Heading = styled.h1`
     margin: 0;
@@ -30,4 +10,45 @@ export const Heading = styled.h1`
 
 export const Items = styled.div`
 
+`
+
+export const StyledCarousel = styled(CarouselProvider)`
+    display: flex;
+    position: relative;
+    height: 40rem;
+    .carousel__slider {
+        width: 100%;
+        ul {
+            display: flex;
+            position: relative;
+            margin: 0;
+        }
+    }
+`
+
+export const Content = styled.div`
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    .myContainer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        .row {
+            width: 100%;
+        }
+    }
+`
+
+export const SlideItem = styled.div<IHeaderStyled>`
+    width: 100%;
+    height: 40rem;
+    background: url(${({ src }) => src}) top;
+    background-size: cover;
+    display: block;
 `
