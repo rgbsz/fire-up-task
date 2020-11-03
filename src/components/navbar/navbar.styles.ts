@@ -3,6 +3,8 @@ import styled from 'styled-components'
 export const Component = styled.nav`
     background: white;
     box-shadow: none;
+    position: relative;
+    z-index: 3;
     .myContainer {
         position: relative;
         display: flex;

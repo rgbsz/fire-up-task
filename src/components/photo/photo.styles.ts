@@ -14,7 +14,7 @@ export const Content = styled.div`
     align-items: center;
     position: relative;
     height: 100%;
-    padding: 1rem; 
+    padding: 1rem;
     img {
         width: 100%;
     }
@@ -28,6 +28,7 @@ export const DescribedContent = styled.div`
     align-items: center;
     padding: 1rem;
     height: 100%;
+    position: relative;
     img {
         width: 100%;
     }
@@ -54,8 +55,8 @@ export const DescribedContent = styled.div`
             align-items: center;
         }
         img {
-            height: 100%;
-            width: auto;
+            width: 100%;
+            height: auto;
         }
     }
 `

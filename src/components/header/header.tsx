@@ -1,4 +1,4 @@
-import React, { ReactChild } from 'react'
+import React from 'react'
 
 import firstIcon from '../../images/Icon1.png'
 import secondIcon from '../../images/Icon2.png'

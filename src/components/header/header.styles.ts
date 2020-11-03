@@ -9,6 +9,7 @@ export const Image = styled.div`
     background-size: cover;
     padding: 6rem 0;
     position: relative;
+    z-index: 4;
     .myContainer {
         height: 100%;
         display: flex;
