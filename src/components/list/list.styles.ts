@@ -15,7 +15,7 @@ export const Heading = styled.span`
     font-size: 1.5rem;
     width: 100%;
     background: ${({ theme }) => theme.colors.lightBlue};
-    padding: .5rem;
+    padding: 1rem!important;
     display: flex;
     align-items: center;
 `
