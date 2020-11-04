@@ -17,6 +17,12 @@ const colors = {
     },
     weather: {
         grey: '#d4d4d4'
+    },
+    boxes: {
+        red: '#C53A34',
+        yellow: '#DEBA41',
+        green: '#508B61',
+        blue: '#7EC8EA'
     }
 }
 

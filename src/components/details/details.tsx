@@ -1,22 +1,23 @@
 import React from 'react'
 
 import { Wrapper, Heading, Item } from './details.styles'
+import { IDetailsTypes } from './details.types'
 
-const Details: React.FC = (): JSX.Element => {
+const Details: React.FC<IDetailsTypes> = ({ cloudy, wind, humidity }): JSX.Element => {
     return (
         <Wrapper>
             <Heading>Weather Details</Heading>
             <Item>
                 <p>Cloudy</p>
-                <span>86%</span>
+                <span>{cloudy}%</span>
             </Item>
             <Item>
                 <p>Wind</p>
-                <span>8km/h</span>
+                <span>{wind}km/h</span>
             </Item>
             <Item>
-                <p>Rain</p>
-                <span>8mm</span>
+                <p>Humidity</p>
+                <span>{humidity}%</span>
             </Item>
         </Wrapper>
     )

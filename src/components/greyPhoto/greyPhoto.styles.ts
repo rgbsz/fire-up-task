@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 import { Side } from './greyPhoto.types'
+import leftIcon from '../../images/leftIcon.png'
+import rightIcon from '../../images/rightIcon.png'
 
 export const Wrapper = styled.div<{ src: string }>`
     margin-right: 1.8rem;
@@ -31,7 +33,7 @@ export const Overlay = styled.div<{ side: Side }>`
     background: rgba(255,255,255,.5);
     clip-path: polygon(${({ side }) => side === 'left' ? '100% 0, 100% 0, 100% 100%, 0 100%' : '0 0, 0 0, 100% 100%, 0 100%'});
     &::after {
-        content: '<<';
+        content: url(${leftIcon});
         position: absolute;
         bottom: 0;
         left: 1rem;
@@ -39,7 +41,7 @@ export const Overlay = styled.div<{ side: Side }>`
         display: ${({ side }) => side === 'left' ? 'none' : 'block'};
     }
     &::before {
-        content: '>>';
+        content: url(${rightIcon});
         position: absolute;
         bottom: 0;
         right: 1rem;

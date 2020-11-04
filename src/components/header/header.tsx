@@ -12,25 +12,30 @@ import { SlideItem, Heading, Items, StyledCarousel, Content } from './header.sty
 
 const Header: React.FC = (): JSX.Element => {
     return (
-        <StyledCarousel
+        <StyledCarousel 
+            isPlaying={true}
+            interval={4000}
+            infinite={true}
             naturalSlideWidth={100}
             naturalSlideHeight={125}
             totalSlides={3}
         >
             <Slider>
                 <Slide index={0}>
+                    <Heading>Feel the Power of Typography</Heading>
                     <SlideItem src={firstSlide} />
                 </Slide>
                 <Slide index={1}>
+                  <Heading>Feel the Power of RWD</Heading>
                     <SlideItem src={secondSlide} />
                 </Slide>
                 <Slide index={2}>
+                     <Heading>Feel the Power of UX Design</Heading>
                     <SlideItem src={thirdSlide} />
                 </Slide>
             </Slider>
             <Content>
                 <div className="myContainer">
-                    <Heading>Feel the Power of Typography</Heading>
                     <Items className='row'>
                         <HeaderItem className='col m4 s12' icon={firstIcon} text='Typography' background={theme.colors.red} opacity='1' />
                         <HeaderItem className='col m4 s12' icon={secondIcon} text='Responsive Web Design' background={theme.colors.blue} opacity='.8' />

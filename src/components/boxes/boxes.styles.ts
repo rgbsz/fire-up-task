@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import BoxBackground from '../../images/boxBackground.png'
 
 export const Wrapper = styled.div`
     width: 100%;
@@ -28,7 +29,8 @@ export const Box = styled.div`
     border: 1px solid ${({ theme }) => theme.colors.blue};
     position: relative;
     z-index: 2;
-    background: white;
+    background: url(${BoxBackground}) center, white;
+    background-size: cover;
     p {
         font-size: 2rem;
         margin: .5rem 0;

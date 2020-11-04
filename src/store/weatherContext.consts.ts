@@ -1,11 +1,16 @@
-import { IWeather } from "./weatherContext.types";
+import { IRequest, IWeather } from "./weatherContext.types";
 
-export const INITIAL: IWeather = {
+export const INITIAL_WEATHER: IWeather = {
     temp: 0,
     wind: 0,
-    time: 0,
+    time: '',
     city: '',
     cloudy: 0,
     humidity: 0,
-    request: false
+    weatherType: ''
+}
+
+export const INITIAL_REQUEST: IRequest = {
+    status: false,
+    msg: null
 }

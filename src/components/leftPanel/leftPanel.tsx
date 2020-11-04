@@ -1,15 +1,16 @@
 import React from 'react'
 
 import { Wrapper, Content, Temp, Description, Name, Time } from './leftPanel.styles'
+import { ILeftPanelProps } from './leftPanel.types'
 
-const LeftPanel: React.FC = (): JSX.Element => {
+const LeftPanel: React.FC<ILeftPanelProps> = ({ temp, city, time }): JSX.Element => {
     return (
         <Wrapper>
             <Content>
-                <Temp>26°C</Temp> 
+                <Temp>{temp}°C</Temp> 
                 <Description>
-                    <Name>Katowice</Name>
-                    <Time>19:06</Time>    
+                    <Name>{city}</Name>
+                    <Time>{time}</Time>    
                 </Description>  
             </Content>
         </Wrapper>

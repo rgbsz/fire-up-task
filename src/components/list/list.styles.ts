@@ -16,4 +16,6 @@ export const Heading = styled.span`
     width: 100%;
     background: ${({ theme }) => theme.colors.lightBlue};
     padding: .5rem;
+    display: flex;
+    align-items: center;
 `
