@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
     display: flex;
     padding: 1rem;
     position: relative;
-    align-items: flex-start;
+    align-items: center;
 `
 
 export const Index = styled.span`
@@ -24,7 +24,7 @@ export const Index = styled.span`
     }
 `
 
-export const Text = styled.p`
+export const Text = styled.p<{ index: number }>`
     text-align: justify;
     width: 100%;
     margin: 0;
