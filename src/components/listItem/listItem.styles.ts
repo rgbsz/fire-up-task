@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.div`
     display: flex;
-    margin: 1rem!important;
+    padding: 0 1rem;
     position: relative;
     align-items: center;
 `
@@ -27,5 +27,5 @@ export const Index = styled.span`
 export const Text = styled.p<{ index: number }>`
     text-align: justify;
     width: 100%;
-    margin: 0;
+    margin: 1rem 0;
 `
