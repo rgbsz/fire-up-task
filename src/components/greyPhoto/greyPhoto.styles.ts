@@ -51,11 +51,11 @@ export const Overlay = styled.div<{ side: Side }>`
     @media only screen and (max-width: 992px) and (min-width: 601px) {
         clip-path: polygon(${({ side }) => side === 'left' ? '0 0, 100% 0, 100% 100%, 0 0' : '0 0, 100% 0, 0 100%, 0 100%'});
         &::after {
-            top: 0;
+            top: 1rem;
             left: 1rem;
         }
         &::before {
-            top: 0;
+            top: 1rem;
             right: 1rem;
         }
     }
@@ -67,7 +67,7 @@ export const Overlay = styled.div<{ side: Side }>`
         }
         &::after {
             left: 1rem;
-            top: 0;
+            top: 1rem;
         }
     }
 `
