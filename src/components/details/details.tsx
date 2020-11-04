@@ -13,7 +13,7 @@ const Details: React.FC<IDetailsTypes> = ({ cloudy, wind, humidity }): JSX.Eleme
             </Item>
             <Item>
                 <p>Wind</p>
-                <span>{wind}km/h</span>
+                <span>{wind}m/s</span>
             </Item>
             <Item>
                 <p>Humidity</p>
