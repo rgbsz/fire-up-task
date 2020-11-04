@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { useLocation } from 'react-router'
 import NavbarLink from '../navbarLink'
 
@@ -16,10 +16,10 @@ const Navbar: React.FC = (): JSX.Element => {
             <div className="myContainer">
                 <Brand src={BrandImage}/>
                 <Links className='hide-on-med-and-down'>
-                    <NavbarLink link='/' text='HOME' active={location === '/' ? true : false}/>
-                    <NavbarLink link='/' text='MENU 2' active={false}/>
-                    <NavbarLink link='/' text='MENU 3' active={false}/>
-                    <NavbarLink link='/weather' text='POGODA' active={location === '/weather' ? true : false}/>
+                    <NavbarLink link='/' text='HOME' active={location === '/' ? 1 : 0}/>
+                    <NavbarLink link='/' text='MENU 2' active={0}/>
+                    <NavbarLink link='/' text='MENU 3' active={0}/>
+                    <NavbarLink link='/weather' text='POGODA' active={location === '/weather' ? 1 : 0}/>
                 </Links>
                 <Hamburger status={mobileNavStatus} setStatus={() => setMobileNavStatus((prev: boolean) => !prev)}/>
             </div>

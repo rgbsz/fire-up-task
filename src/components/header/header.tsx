@@ -37,9 +37,9 @@ const Header: React.FC = (): JSX.Element => {
             <Content>
                 <div className="myContainer">
                     <Items className='row'>
-                        <HeaderItem className='col m4 s12' icon={firstIcon} text='Typography' background={theme.colors.red} opacity='1' />
-                        <HeaderItem className='col m4 s12' icon={secondIcon} text='Responsive Web Design' background={theme.colors.blue} opacity='.8' />
-                        <HeaderItem className='col m4 s12' icon={thirdIcon} text='UX Design' background={theme.colors.green} opacity='.8' />
+                        <HeaderItem className='col m4 s12' icon={firstIcon} text='Typography' background={theme.colors.red} opacity='1' alt='Letter icon'/>
+                        <HeaderItem className='col m4 s12' icon={secondIcon} text='Responsive Web Design' background={theme.colors.blue} opacity='.8' alt='Magic wand icon'/>
+                        <HeaderItem className='col m4 s12' icon={thirdIcon} text='UX Design' background={theme.colors.green} opacity='.8' alt='User icon'/>
                     </Items>
                 </div>
             </Content>

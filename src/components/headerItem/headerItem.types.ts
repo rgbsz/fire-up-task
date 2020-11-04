@@ -8,5 +8,6 @@ export interface IHeaderItemProps {
     icon: any,
     text: string,
     background: IStyledItemProps['background'],
-    opacity: IStyledItemProps['opacity']
+    opacity: IStyledItemProps['opacity'],
+    alt: string
 }

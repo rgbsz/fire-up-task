@@ -11,7 +11,7 @@ const GreySection: React.FC = (): JSX.Element => {
         <Wrapper>
             <GreyPhotosWrapper>
             {
-                GREY_PHOTOS.map((item: IGreyPhotoProps) => <GreyPhoto src={item.src} side={item.side}/>)
+                GREY_PHOTOS.map((item: IGreyPhotoProps, i: number) => <GreyPhoto src={item.src} side={item.side} key={i}/>)
             }
             </GreyPhotosWrapper>
             <List />

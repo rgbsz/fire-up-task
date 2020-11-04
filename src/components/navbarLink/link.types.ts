@@ -1,5 +1,5 @@
 export interface ILinkStyled {
-    active: boolean
+    active: 1 | 0
 }
 
 export interface ILinkProps {

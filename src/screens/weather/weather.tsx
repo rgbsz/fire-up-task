@@ -6,11 +6,9 @@ import LeftPanel from '../../components/leftPanel'
 import RightPanel from '../../components/rightPanel'
 import LoadingScreen from '../../components/loadingScreen'
 import { WEATHER_PHOTOS } from './weather.consts'
-import dayjs from 'dayjs'
 
 const Weather: React.FC = (): JSX.Element => {
     const { weather, setWeather, request, setRequest } = useContext(weatherContext)
-    console.log(request.msg)
     const [image, setImage] = useState<string>(WEATHER_PHOTOS.Clear)
     const GetWeather = async (city: string) => {
         try {
@@ -21,7 +19,6 @@ const Weather: React.FC = (): JSX.Element => {
             const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=7ffb65c0bf21dcebcb37124fb7de4f27&units=metric`);
             const data = response.data
             const time = new Date((data.dt + data.timezone - 3600) * 1000)
-            console.log(time)
             setTimeout(() => {
                 switch(data.weather[0].main) {
                     case 'Thunderstorm':
@@ -102,6 +99,7 @@ const Weather: React.FC = (): JSX.Element => {
         if(request.status === false) {
             GetWeather('Katowice')
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     return (
         <Wrapper image={image}>

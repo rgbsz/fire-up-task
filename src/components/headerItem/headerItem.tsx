@@ -1,12 +1,11 @@
 import React from 'react'
-import theme from '../../theme'
 import { Wrapper } from './headerItem.styles'
 import { IHeaderItemProps } from './headerItem.types'
 
-const HeaderItem: React.FC<IHeaderItemProps> = ({ className, icon, text, background, opacity }): JSX.Element => {
+const HeaderItem: React.FC<IHeaderItemProps> = ({ className, icon, text, background, opacity, alt }): JSX.Element => {
     return (
         <Wrapper className={className} background={background} opacity={opacity}>
-            <img src={icon} className='hide-on-small-only'/>
+            <img src={icon} className='hide-on-small-only' alt={alt}/>
             <span>{text}</span>
         </Wrapper>
     )
